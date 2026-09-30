@@ -195,6 +195,10 @@
   .subscribe-input {
     width: 264px;
   }
+
+  .footer-socials-list {
+  justify-content: flex-start;
+}
 }
 
 /* Desktop */
