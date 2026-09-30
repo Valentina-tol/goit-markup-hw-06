@@ -29,8 +29,7 @@
   flex-direction: column;
 
   height: 100%;
-  padding-top: 72px;
-  padding-bottom: 40px;
+  padding: 72px 16px 40px;
 }
 
 .mobile-menu-close {
@@ -100,6 +99,7 @@
 }
 
 .mobile-menu-email {
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;

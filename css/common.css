@@ -1,4 +1,4 @@
-/* CSS variable */
+/* CSS variables */
 :root {
   --iris: #4d5ae5;
   --navy-blue: #2e2f42;
@@ -6,15 +6,15 @@
   --white: #ffffff;
   --slate: #434455;
   --cornflower: #e7e9fc;
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
 }
 
-/* Base / Global*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base / Global */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--slate);
@@ -22,7 +22,7 @@ body {
   margin: 0;
 }
 
-/* Reset start*/
+/* Reset start */
 ul,
 ol {
   list-style-type: none;
@@ -66,9 +66,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* Reset end*/
 
-/* common */
+/* Reset end */
+
+/* Common */
 .visually-hidden,
 .read-only,
 .sr-only {
@@ -80,18 +81,34 @@ img {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
- clip: rect(0, 0, 0, 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
+/* Mobile */
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .section-title {
@@ -104,6 +121,8 @@ img {
   text-align: center;
 }
 
-/* .hide {
-  display: none;
-} */
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}

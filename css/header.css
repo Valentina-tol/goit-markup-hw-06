@@ -24,7 +24,7 @@
 
 .menu-open-icon {
   display: block;
-  fill: none;
+  color: #2f2f37;
 }
 
 .header-logo {
@@ -37,6 +37,10 @@
 
 .header-logo .logo-part {
   color: #2e2f42;
+}
+.nav-link {
+  display: block;
+  padding: 24px 0;
 }
 
 /*Tablet*/
@@ -80,14 +84,15 @@
   }
 }
 
-/*Descktop*/
+/* Desktop */
 @media screen and (min-width: 1158px) {
-  .contacts-list {
-    flex-direction: row;
+  .nav-list {
+    margin-left: 76px;
   }
 
-  .header-logo {
-    padding: 24px 0;
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
   }
 
   .contacts-link {
