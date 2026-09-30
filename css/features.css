@@ -1,46 +1,32 @@
-/* #region Features-title */
+/* #region Features */
 
-.features {
-  padding: 120px 0;
+.feature {
+  padding: 96px 0;
 }
 
+/* Mobile */
 .feature-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .feature-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
 
+/* Иконки на Mobile и Tablet скрыты */
 .features-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 112px;
-  width: 264px;
-  margin-bottom: 8px;
-
-  border: 1px solid #8e8f99;
-  background-color: var(--cloud);
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.feature-icon {
-  display: block;
-  width: 64px;
-  height: 64px;
-  fill: var(--iris);
+  display: none;
 }
 
 .feature-title {
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
 }
 
@@ -49,6 +35,66 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .feature-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .feature-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .feature-title {
+    text-align: left;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .feature {
+    padding: 120px 0;
+  }
+
+  .feature-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .feature-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .features-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: var(--cloud);
+  }
+
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+    fill: var(--iris);
+  }
+
+  .feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 /* #endregion */
